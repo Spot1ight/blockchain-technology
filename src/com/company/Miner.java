@@ -6,7 +6,6 @@ public class Miner {
     public void mine(Block block, BlockChain blockChain) {
         // it takes
         while (!isGoldenHash(block)) {
-            //System.out.println(block);
             block.incrementNonce();
             block.generateHash();
         }
